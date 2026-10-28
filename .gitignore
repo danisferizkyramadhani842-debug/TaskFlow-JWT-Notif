@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*service-account*.json
+*-service-account*.json
+
+# Expo
+.expo/
+dist/
+web-build/
+android/
+ios/
+*.jks
+*.keystore
+
+# Firebase config can be kept locally only until project-specific review
+google-services.json
+
+# Logs and OS/editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/

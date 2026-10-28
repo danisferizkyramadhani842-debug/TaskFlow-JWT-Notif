@@ -1,0 +1,22 @@
+{
+  "name": "taskflow-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Express + MySQL + JWT API for TaskFlow mobile practical",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "check": "node --check server.js && node --check app.js && node --check db.js && node --check middleware/auth.js && node --check routes/auth.js && node --check routes/tasks.js && node --check routes/notifications.js && node --check services/pushService.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.0"
+  },
+  "devDependencies": { "nodemon": "^3.1.10" }
+}

@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "TaskFlow",
+    "slug": "taskflow-jwt-notif",
+    "scheme": "taskflow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "plugins": ["expo-router", "expo-notifications", "expo-secure-store"],
+    "android": {
+      "package": "id.ac.uinsa.taskflow",
+      "permissions": ["POST_NOTIFICATIONS"]
+    },
+    "ios": {
+      "bundleIdentifier": "id.ac.uinsa.taskflow"
+    },
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ISI_DENGAN_EAS_PROJECT_ID"
+      }
+    }
+  }
+}

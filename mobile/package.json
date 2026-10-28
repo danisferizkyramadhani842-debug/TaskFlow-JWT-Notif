@@ -1,0 +1,26 @@
+{
+  "name": "taskflow-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "check": "node --check app/_layout.js && node --check app/index.js && node --check app/sign-in.js && node --check app/register.js && node --check app/\(app\)/_layout.js && node --check app/\(app\)/index.js && node --check app/\(app\)/tasks.js && node --check app/\(app\)/profile.js && node --check context/AuthContext.js && node --check services/api.js && node --check services/authService.js && node --check services/taskService.js && node --check services/notificationService.js && node --check utils/notifications.js"
+  },
+  "dependencies": {
+    "expo": "~54.0.0",
+    "expo-constants": "~18.0.0",
+    "expo-notifications": "~0.32.0",
+    "expo-router": "~6.0.0",
+    "expo-secure-store": "~15.0.0",
+    "expo-status-bar": "~3.0.0",
+    "react": "19.1.0",
+    "react-native": "0.81.4",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0"
+  },
+  "devDependencies": {}
+}

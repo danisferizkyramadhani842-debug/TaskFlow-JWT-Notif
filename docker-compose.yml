@@ -1,0 +1,21 @@
+services:
+  db:
+    image: mysql:8.4
+    container_name: taskflow-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: taskflow_local_root_change_me
+      MYSQL_DATABASE: db_taskflow
+    ports:
+      - "3306:3306"
+    volumes:
+      - taskflow_mysql_data:/var/lib/mysql
+      - ./backend/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-ptaskflow_local_root_change_me"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  taskflow_mysql_data:
