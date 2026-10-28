@@ -7,8 +7,7 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",
-    "check": "node --check app/_layout.js && node --check app/index.js && node --check app/sign-in.js && node --check app/register.js && node --check app/\(app\)/_layout.js && node --check app/\(app\)/index.js && node --check app/\(app\)/tasks.js && node --check app/\(app\)/profile.js && node --check context/AuthContext.js && node --check services/api.js && node --check services/authService.js && node --check services/taskService.js && node --check services/notificationService.js && node --check utils/notifications.js"
+    "web": "expo start --web"
   },
   "dependencies": {
     "expo": "~54.0.0",

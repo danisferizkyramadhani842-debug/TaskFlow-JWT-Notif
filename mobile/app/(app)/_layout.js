@@ -4,14 +4,16 @@ import * as Notifications from 'expo-notifications';
 
 export default function AppLayout() {
   useEffect(() => {
+    const openFromResponse = (event) => {
+      const screen = event?.notification?.request?.content?.data?.screen;
+      if (screen === 'tasks') router.push('/tasks');
+      if (screen === 'profile') router.push('/profile');
+    };
+    Notifications.getLastNotificationResponseAsync().then((event) => { if (event) openFromResponse(event); }).catch(() => {});
     const received = Notifications.addNotificationReceivedListener((notification) => {
       console.log('Notifikasi diterima:', notification.request.content);
     });
-    const response = Notifications.addNotificationResponseReceivedListener((event) => {
-      const screen = event.notification.request.content.data?.screen;
-      if (screen === 'tasks') router.push('/tasks');
-      if (screen === 'profile') router.push('/profile');
-    });
+    const response = Notifications.addNotificationResponseReceivedListener(openFromResponse);
     return () => { received.remove(); response.remove(); };
   }, []);
 

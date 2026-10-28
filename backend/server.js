@@ -4,7 +4,7 @@ import { cekKoneksiDatabase, pool } from './db.js';
 
 const PORT = Number(process.env.PORT || 3000);
 
-if (!process.env.JWT_SECRET || process.env.JWT_SECRET.length < 32) {
+if (!process.env.JWT_SECRET || process.env.JWT_SECRET.length < 32 || process.env.JWT_SECRET.startsWith('GANTI_DENGAN')) {
   console.error('JWT_SECRET wajib diisi dengan secret acak minimal 32 karakter. Periksa backend/.env.');
   process.exit(1);
 }

@@ -38,11 +38,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": []
+          "raw": "{{baseUrl}}/"
         }
       },
       "response": [],
@@ -69,14 +65,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/auth/register",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "auth",
-            "register"
-          ]
+          "raw": "{{baseUrl}}/auth/register"
         },
         "body": {
           "mode": "raw",
@@ -95,7 +84,7 @@
           "script": {
             "type": "text/javascript",
             "exec": [
-              "if (!pm.collectionVariables.get('testEmail')) { pm.collectionVariables.set('testEmail', `danis.${Date.now()}@example.com`); }"
+              "pm.collectionVariables.set('testEmail', `danis.${Date.now()}@example.com`);"
             ]
           }
         },
@@ -123,14 +112,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/auth/register",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "auth",
-            "register"
-          ]
+          "raw": "{{baseUrl}}/auth/register"
         },
         "body": {
           "mode": "raw",
@@ -166,14 +148,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/auth/register",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "auth",
-            "register"
-          ]
+          "raw": "{{baseUrl}}/auth/register"
         },
         "body": {
           "mode": "raw",
@@ -209,14 +184,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/auth/login",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "auth",
-            "login"
-          ]
+          "raw": "{{baseUrl}}/auth/login"
         },
         "body": {
           "mode": "raw",
@@ -256,14 +224,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/auth/login",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "auth",
-            "login"
-          ]
+          "raw": "{{baseUrl}}/auth/login"
         },
         "body": {
           "mode": "raw",
@@ -294,14 +255,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/auth/me",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "auth",
-            "me"
-          ]
+          "raw": "{{baseUrl}}/auth/me"
         }
       },
       "response": [],
@@ -328,14 +282,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/auth/me",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "auth",
-            "me"
-          ]
+          "raw": "{{baseUrl}}/auth/me"
         }
       },
       "response": [],
@@ -366,13 +313,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/tasks",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "tasks"
-          ]
+          "raw": "{{baseUrl}}/tasks"
         },
         "body": {
           "mode": "raw",
@@ -411,13 +352,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/tasks",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "tasks"
-          ]
+          "raw": "{{baseUrl}}/tasks"
         }
       },
       "response": [],
@@ -444,14 +379,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/tasks/99999999",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "tasks",
-            "99999999"
-          ]
+          "raw": "{{baseUrl}}/tasks/99999999"
         }
       },
       "response": [],
@@ -482,15 +410,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/tasks/{{taskId}}/status",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "tasks",
-            "{{taskId}}",
-            "status"
-          ]
+          "raw": "{{baseUrl}}/tasks/{{taskId}}/status"
         },
         "body": {
           "mode": "raw",
@@ -530,15 +450,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/tasks/{{taskId}}/status",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "tasks",
-            "{{taskId}}",
-            "status"
-          ]
+          "raw": "{{baseUrl}}/tasks/{{taskId}}/status"
         },
         "body": {
           "mode": "raw",
@@ -578,14 +490,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/notifications/token",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "notifications",
-            "token"
-          ]
+          "raw": "{{baseUrl}}/notifications/token"
         },
         "description": "Isi collection variable expoPushToken dengan token perangkat asli dari layar Aktifkan Notifikasi. Jangan menggunakan placeholder sebagai bukti.",
         "body": {
@@ -626,14 +531,7 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/notifications/test",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "notifications",
-            "test"
-          ]
+          "raw": "{{baseUrl}}/notifications/test"
         },
         "body": {
           "mode": "raw",
